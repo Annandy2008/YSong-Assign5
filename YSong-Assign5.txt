@@ -1,0 +1,46 @@
+[user@sahara ~]$ sqlite3 YSong.db
+SQLite version 3.51.2 2026-01-09 17:27:48
+Enter ".help" for usage hints.
+sqlite> .tables
+assignment        package_contents  task              taskpackage     
+item              package_type      task_status       volunteer       
+package           packing_list      task_type         volunteertask   
+sqlite> .read YSong-Assign5.sql;
+Error: cannot open "YSong-Assign5.sql;"
+sqlite> .read YSong-Assign5.sql
+100
+Gene Lewin
+George Brewer
+Prepare 100 food packages
+Take packages to the warehouse
+food and water
+bottle of antibiotics
+bottle of aspirin
+flashlight
+pack of bandages
+Prepare 20 children's packages
+Prepare 100 water packages
+Prepare 5,000 packages
+Joan Simmons
+Chris Jordan
+Julie White
+Gerry Banks
+Baby formula
+open|4
+closed|3
+ongoing|2
+pending|1
+106|308.0
+3
+can of spam
+dried fruit
+tent
+men's coat
+women's coat
+sleeping bag
+6|150.0
+2|151.0
+4|350.0
+10|750.0
+5|1420.0
+sqlite> 
